@@ -1,0 +1,47 @@
+<script>
+    class Bank {
+        constructor(bankname, branch, accountnumber, accountname, ifsc, balance ) {
+            this.bankname = bankname;
+            this.branch = branch;
+            this.accountnumber = accountnumber;
+            this.accountname = accountname;
+            this.ifsc = ifsc;
+            this.balance= balance;
+        }
+
+
+        details(){
+            return `your Bank name is ${this.bankname} and this branch is ${this.branch} 
+                    your account number is ${this.accountnumber} and ifsc code is ${this.ifsc} `
+        }
+
+        Balance(){
+            return `your account balance is  ${this.balance}`
+        }
+
+        History(){
+            let deposit = 350;
+            let credit = 100 ;
+            let creditdate = "19/07/2024";
+            let depositdate = "03/04/2024";
+
+            return `deposite Date:${depositdate} and this diposite is ${deposit} 
+                    credit date:${creditdate} and this credit is ${credit}`  
+
+        }
+
+    }
+
+    let PNB = new Bank("PNB", "dhasajunction", "40416975334", "Parth", "pnb00654", "15000");
+
+
+
+    console.log(PNB.details());
+
+    console.log('');
+
+
+    console.log(PNB.History());
+
+    
+</script>
